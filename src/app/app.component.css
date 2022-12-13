@@ -1,0 +1,124 @@
+.list-button{
+    color: white !important;
+    background-color:#3D4853 ;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 50px;
+    font-weight: bold !important;
+}
+.map-button{
+    color: white !important;
+    background-color:#C4C4C4 ;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 50px;
+}
+.filter-button{
+    color: white !important;
+    background-color:#8FA3B9 ;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 50px;
+}
+.trash-button{
+    color: white !important;
+    background-color:transparent ;
+    border: none;
+    border-radius: 5px;
+    float: right;
+}
+.display-button{
+    color: white !important;
+    background-color:transparent ;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+    float: left;
+}
+.format{
+    float: left;
+    color: white;
+    margin-top: 2px;
+}
+.search-button
+{
+    background-color: white;
+    border: none;
+    color:#8FA3B9;
+}
+.add-new-button{
+    background-color: #9DD47A;
+     color: white;
+     border: none;
+     border-radius: 5px;
+     height: 30pt;
+     font-weight: bold;
+}
+
+#button-addon2{
+    background-color: white !important;
+    color: #8FA3B9;
+    border-left: none;
+    
+}
+.me-auto{
+    display: flex; 
+place-content: space-between; 
+}
+.ms-auto{
+    display: flex; 
+place-content: space-between; 
+}
+
+.container{
+    margin-top: 20px;
+}
+
+
+
+
+/*Popup CSS */
+.add-button{
+    background-color: #9DD47A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 30pt;
+    width: 45pt;
+    font-weight: bold;
+    float: right;
+    position: relative;
+    cursor: pointer;
+  }
+  #x-button{
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    color: white !important;
+  }
+  
+  
+  .modal-header {
+    position: relative;
+   
+    height: 60px;
+    
+    font-size: 1rem;
+    background-color: #EFC855;
+    padding-left: 5px;
+    padding-right: 5px;
+    
+  }
+
+  .add-popup > * {
+    margin: 10px 20px;
+  }
+  
+  
+
+
+
+
