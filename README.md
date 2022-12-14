@@ -8,7 +8,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 3. Run `json-server --watch db.json` in another command line for the Fake database server Json sever. Navigate to `http://localhost:3000` 
 4. Now you can use the Application and test it
 
-##Notes 
+## Notes 
 * I implemented a dynamic search method that checks all attributes of a device, so you can easily search for a device
 * When you click on the map button, the browser redirects to Google Maps
 * The List Button refresh the page, you can use it after searching for a device
