@@ -1,22 +1,28 @@
 {
   "devices": [
     {
-      "id": 1,
-      "devicename": "aa",
-      "coordinates": "aa",
-      "format": "16:9"
-    },
-    {
-      "devicename": "azdadzd",
-      "coordinates": "dzdazdad",
-      "format": "4:3",
-      "id": 106
-    },
-    {
-      "devicename": "hamdiskander5@gmail.com",
-      "coordinates": "lekzfnlzefnk",
+      "devicename": "Device Name",
+      "coordinates": "48.129450, 11.5592482",
       "format": "16:9",
-      "id": 107
+      "id": 1
+    },
+    {
+      "devicename": "Device Name2",
+      "coordinates": "48.129450, 11.5592482",
+      "format": "4:3",
+      "id": 2
+    },
+    {
+      "devicename": "Device Name3",
+      "coordinates": "48.129450, 11.5592482",
+      "format": "4:3",
+      "id": 3
+    },
+    {
+      "devicename": "Device Name4",
+      "coordinates": "48.129450, 11.5592482",
+      "format": "4:3",
+      "id": 4
     }
   ]
 }

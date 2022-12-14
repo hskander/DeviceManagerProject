@@ -1,8 +1,7 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Device } from './Device';
 import { FormGroup , FormBuilder, Validators } from '@angular/forms';
 import { DeviceService } from './services/device.service';
-import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -14,7 +13,7 @@ export class AppComponent implements OnInit {
   public addDeviceForm!: FormGroup;
   public deviceModelObj:Device = new Device() ;
   public devices:Device[]=[];
-   deleteDeviceObj!:Device
+  deleteDeviceObj:Device  = new Device();
   constructor(private formBuilder:FormBuilder, private api: DeviceService){}
 
   ngOnInit(){
@@ -33,10 +32,10 @@ export class AppComponent implements OnInit {
       this.deviceModelObj.coordinates =   this.addDeviceForm.value.Coordinates;
       this.deviceModelObj.format=  this.addDeviceForm.value.Format ;
       this.api.addDeviceApi(this.deviceModelObj).subscribe(()=>{
-        alert("Device Added Successfully");
         this.addDeviceForm.reset();
         let ref=document.getElementById('cancel');
         ref?.click();
+        alert("Device Added Successfully");
         this.getAllDevices();
       })
      }
@@ -57,7 +56,6 @@ export class AppComponent implements OnInit {
   }
 
   public searchEmployees(key: string): void {
-    console.log(key);
     const results: Device[] = [];
     for (const device of this.devices) {
       if (device.devicename.toLowerCase().indexOf(key.toLowerCase()) !== -1

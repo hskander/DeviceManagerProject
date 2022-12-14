@@ -1,19 +1,9 @@
-.list-button{
-    color: white !important;
-    background-color:#3D4853 ;
-    border: none;
-    border-radius: 5px;
-    height: 40px;
-    width: 50px;
-    font-weight: bold !important;
-}
-.map-button{
-    color: white !important;
-    background-color:#C4C4C4 ;
-    border: none;
-    border-radius: 5px;
-    height: 40px;
-    width: 50px;
+#navbar{
+    height: 120px; 
+    background-color: white !important; 
+    padding-left: 30px; 
+    padding-right: 30px; 
+    padding-top: 40px;
 }
 .filter-button{
     color: white !important;
@@ -22,6 +12,43 @@
     border-radius: 5px;
     height: 40px;
     width: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.list-button{
+    color: white !important;
+    background-color:#3D4853 ;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 50px;
+    font-weight: bold !important;
+    margin-left: 5px; 
+    margin-right: 5px;
+}
+#dropdown-button{
+    background-color: white !important; 
+    color: #8FA3B9; 
+    font-weight: bold; height: 30pt;
+}
+.map-button{
+    color: white !important;
+    background-color:#C4C4C4 ;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.add-new-button{
+    background-color: #9DD47A;
+     color: white;
+     border: none;
+     border-radius: 5px;
+     height: 30pt;
+     font-weight: bold;
+     margin-left: 5px; margin-right: 5px;
 }
 .trash-button{
     color: white !important;
@@ -43,27 +70,7 @@
     color: white;
     margin-top: 2px;
 }
-.search-button
-{
-    background-color: white;
-    border: none;
-    color:#8FA3B9;
-}
-.add-new-button{
-    background-color: #9DD47A;
-     color: white;
-     border: none;
-     border-radius: 5px;
-     height: 30pt;
-     font-weight: bold;
-}
 
-#button-addon2{
-    background-color: white !important;
-    color: #8FA3B9;
-    border-left: none;
-    
-}
 .me-auto{
     display: flex; 
 place-content: space-between; 
@@ -77,10 +84,12 @@ place-content: space-between;
     margin-top: 20px;
 }
 
+#cfooter{
+    background-color: #8FA3B9;
+}
 
 
-
-/*Popup CSS */
+/*Add new Popup CSS */
 .add-button{
     background-color: #9DD47A;
     color: white;
@@ -94,19 +103,26 @@ place-content: space-between;
     cursor: pointer;
   }
   
-  
+  .modal-content{
+    padding-bottom: 20px; 
+    border-radius: 0px;
+  }
   .modal-header {
     position: relative;
-   
     height: 60px;
-    
     font-size: 1rem;
     background-color: #EFC855;
     padding-left: 5px;
     padding-right: 5px;
-    
+    border-radius: 0px;
   }
-
+  .modal-title{
+    color: white;
+    margin-left: 10px !important;
+  }
+  #cancel{
+    color: white; margin-right: 1px;
+  }
   .add-popup > * {
     margin: 10px 20px;
   }
@@ -116,13 +132,26 @@ place-content: space-between;
     color: white;
     border: none;
     border-radius: 5px;
-    height: 30pt;
-    width: 45pt;
    
     float: right;
     position: relative;
     cursor: pointer;
 
+    margin: 15px 5px 5px 5px;
+
+  }
+
+  .form-header{
+    position: relative;    
+    font-size: 1rem;
+    background-color: #EFC855;
+   padding: 10px 10px 10px 10px;
+   height: 130px;
+   text-align: center;
+    color: white;
+  }
+  .modal-body{
+    padding: 0 0 0 0;
   }
   
 

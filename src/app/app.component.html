@@ -1,13 +1,13 @@
-<nav class="navbar navbar-expand-lg bg-light" style="height: 120px; background-color: white !important; padding-left: 30px; padding-right: 30px; padding-top: 40px;">
+<nav class="navbar navbar-expand-lg bg-light" id="navbar" >
        
   <div class="me-auto">
-  <button class="filter-button" style="margin-left: 5px; margin-right: 5px;">
+  <button class="filter-button" >
     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-sliders2" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M10.5 1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4H1.5a.5.5 0 0 1 0-1H10V1.5a.5.5 0 0 1 .5-.5ZM12 3.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm-6.5 2A.5.5 0 0 1 6 6v1.5h8.5a.5.5 0 0 1 0 1H6V10a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5ZM1 8a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2A.5.5 0 0 1 1 8Zm9.5 2a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V13H1.5a.5.5 0 0 1 0-1H10v-1.5a.5.5 0 0 1 .5-.5Zm1.5 2.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Z"/>
       </svg>
   </button>
   <div class="dropdown" style="margin-left: 5px; margin-right: 5px;">
-     <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: white !important; color: #8FA3B9; font-weight: bold; height: 30pt;">
+     <button class="btn btn-secondary dropdown-toggle" id="dropdown-button" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
       Actions
     </button>
      <ul class="dropdown-menu">
@@ -17,30 +17,28 @@
     </ul>
   </div>
 </div>
-
  
 <div class="ms-auto">
-
   <form class="d-flex" role="search">
     <div class="input-group mb-3" style="margin-left: 5px; margin-right: 5px;">
       <input type="search" (ngModelChange)="searchEmployees(key.value)" #key="ngModel" ngModel
-      name="key" id="searchName" class="form-control mr-sm-2" placeholder="Search devices..." required>
+      name="key" id="searchName" class="form-control mr-sm-2" placeholder="Search" required>
     </div>
   </form>
   <a href="https://www.google.com/maps/place/Munich,+Allemagne/@48.1549107,11.5418357,11z/data=!3m1!4b1!4m5!3m4!1s0x479e75f9a38c5fd9:0x10cb84a7db1987d!8m2!3d48.1351253!4d11.5819805">
-  <button class="map-button" style="margin-left: 5px; margin-right: 5px;" >
+  <button class="map-button"  >
     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-map-fill" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.598-.49L10.5.99 5.598.01a.5.5 0 0 0-.196 0l-5 1A.5.5 0 0 0 0 1.5v14a.5.5 0 0 0 .598.49l4.902-.98 4.902.98a.502.502 0 0 0 .196 0l5-1A.5.5 0 0 0 16 14.5V.5zM5 14.09V1.11l.5-.1.5.1v12.98l-.402-.08a.498.498 0 0 0-.196 0L5 14.09zm5 .8V1.91l.402.08a.5.5 0 0 0 .196 0L11 1.91v12.98l-.5.1-.5-.1z"/>
       </svg>
   </button>
 </a>
   
-  <button class="list-button" style="margin-left: 5px; margin-right: 5px;" (click)="getAllDevices()">
+  <button class="list-button" (click)="getAllDevices()">
     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16" >
         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
       </svg>
   </button>
-  <button class="add-new-button" style="margin-left: 5px; margin-right: 5px;" data-bs-toggle="modal" data-bs-target="#addDeviceForm">
+  <button class="add-new-button" data-bs-toggle="modal" data-bs-target="#addDeviceForm">
     + Add New
   </button>
  </div>
@@ -58,7 +56,7 @@
       <h5 class="card-title" style="font-weight: bold;">{{d.devicename}}</h5>
       <p class="card-text">Coordinate: {{d.coordinates}} </p>
     </div>
-    <div class="card-footer" id="cfooter" style="background-color: #8FA3B9;">
+    <div class="card-footer" id="cfooter">
       
         <button class="display-button">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-display" viewBox="0 0 16 16">
@@ -84,20 +82,20 @@
 </div>
 
 
-<!-- add new Advice Form -->
+<!-- add new Device Form -->
 <div class="modal custom-modal fade" id="addDeviceForm" role="dialog" >
   <div class="modal-dialog modal-dialog-centered" role="document" >
-    <div class="modal-content" style="padding-bottom: 20px; border-radius: 0px;">
-  <div class="modal-header" style="border-radius: 0px;">
-    <h5 class="modal-title" style="color: white;margin-left: 10px !important;" >Add New Device</h5>
-    <button (click)="addDeviceForm.reset()" id="cancel" type="button" class="close" data-bs-dismiss="modal" aria-label="Close" style="color: white; margin-right: 1px;">
+  <div class="modal-content">
+  <div class="modal-header" >
+    <h5 class="modal-title" >Add New Device</h5>
+    <button (click)="addDeviceForm.reset()" id="cancel" type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
         <span aria-hidden="true">&times;</span>
     </button>
 </div>
-    <form  class="add-popup" [formGroup]="addDeviceForm"> 
+    <form (ngSubmit)="onAddDevice()"  class="add-popup" [formGroup]="addDeviceForm"> 
       <div class="form-group" >
         <label for="InputName">Name <span style="color: red;">*</span></label>
-        <input type="text" class="form-control" id="name" formControlName="Name" 
+        <input type="text" class="form-control" id="Name" formControlName="Name" 
         [class.invalid]="addDeviceForm.get('Name')?.invalid && addDeviceForm.get('Name')?.touched">
         <div *ngIf="addDeviceForm.get('Name')?.invalid && addDeviceForm.get('Name')?.touched">
           <small  class="text-danger"> *Name is required</small>
@@ -105,7 +103,7 @@
       </div>
       <div class="form-group">
         <label for="inputCoordinates">Coordinates <span style="color: red;">*</span></label>
-        <input type="text" class="form-control" id="coordinates" formControlName="Coordinates"
+        <input type="text" class="form-control" id="Coordinates" formControlName="Coordinates"
         [class.invalid]="addDeviceForm.get('Coordinates')?.invalid && addDeviceForm.get('Coordinates')?.touched">
         <div *ngIf="addDeviceForm.get('Coordinates')?.invalid && addDeviceForm.get('Coordinates')?.touched">
           <small class="text-danger"> *Coordinates are required</small>
@@ -126,30 +124,34 @@
             4:3
           </label>
         </div>
-      <button type="submit" class="add-button" (click)="onAddDevice()">Add</button>
+        <div class="submit-section">
+          <button type="submit" class="add-button">Add</button>
+        </div>
+      
     </form>
     </div>
     </div>
     
 </div>
-<!--add new Advice Form -->
+<!--add new device Form -->
 
+<!--delete device Form -->
 <div class="modal" id="deleteDeviceForm" role="dialog" >
-  <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content" style="align-items: center">
+  <div class="modal-dialog modal-dialog-centered" >
+      <div class="modal-content">
           <div class="modal-body">
-              <div class="form-header">
+              <div class="form-header" >
                   <h3>Delete Device</h3>
-                  <p>Are you sure want to delete Device {{deleteDeviceObj?.devicename}}?</p>
+                  <p>Are you sure want to delete Device {{deleteDeviceObj.devicename}}?</p>
               </div>
               <div class="modal-btn delete-action">
                   <div class="row">
                       <div class="col-6">
-                           <button  class="btn-del" style="background-color: red;"
+                           <button  class="btn-del" style="background-color: #d11a2a; width: 168pt; height: 30pt;"
                             (click)="onDeleteDevice()">Delete</button> 
                       </div>
                       <div class="col-6">
-                          <button data-bs-dismiss="modal" style="background-color: #9DD47A;"
+                          <button data-bs-dismiss="modal" style="background-color: #C4C4C4; width: 45pt; height: 30pt;"
                               class="btn-canc " id="btn-canc">Cancel</button>
                       </div>
                   </div>
@@ -158,3 +160,4 @@
       </div>
   </div>
 </div>
+<!--delete device Form -->
