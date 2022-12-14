@@ -93,12 +93,6 @@ place-content: space-between;
     position: relative;
     cursor: pointer;
   }
-  #x-button{
-    background-color: transparent;
-    border: none;
-    border-radius: 5px;
-    color: white !important;
-  }
   
   
   .modal-header {
@@ -117,6 +111,19 @@ place-content: space-between;
     margin: 10px 20px;
   }
   
+  /*delete popup */
+  .btn-del , .btn-canc{
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 30pt;
+    width: 45pt;
+   
+    float: right;
+    position: relative;
+    cursor: pointer;
+
+  }
   
 
 

@@ -1,7 +1,7 @@
-export interface Device {
-    id: number;
-    devecename: string;
-    coordinates: string;
-    format: string;
+export class Device {
+    id!: number;
+    devicename!: string;
+    coordinates!: string;
+    format!: string;
    
   }

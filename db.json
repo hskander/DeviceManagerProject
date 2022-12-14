@@ -1,0 +1,22 @@
+{
+  "devices": [
+    {
+      "id": 1,
+      "devicename": "aa",
+      "coordinates": "aa",
+      "format": "16:9"
+    },
+    {
+      "devicename": "azdadzd",
+      "coordinates": "dzdazdad",
+      "format": "4:3",
+      "id": 106
+    },
+    {
+      "devicename": "hamdiskander5@gmail.com",
+      "coordinates": "lekzfnlzefnk",
+      "format": "16:9",
+      "id": 107
+    }
+  ]
+}
